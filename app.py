@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import fetch_openml
 
+st.header("EL MEHDI - IAENG")
 st.title("TP LDA : Projection 1D (Version MNIST 28x28)")
 st.write("Chargement du vrai dataset MNIST et calcul de la projection 1D *From Scratch*.")
 
