@@ -19,10 +19,10 @@ with st.spinner("Chargement du dataset MNIST en cours..."):
     X, y = load_mnist_784()
 
 # Filtrage strict pour ne garder que les chiffres 0 et 1, 
-# et limitation rigoureuse à 5000 images pour une rapidité maximale
+# et limitation rigoureuse à 1500 images pour une rapidité maximale
 masque = (y == 0) | (y == 1)
-X_filtre = X[masque][:5000] / 255.0  
-y_filtre = y[masque][:5000]
+X_filtre = X[masque][:1500] / 255.0  
+y_filtre = y[masque][:1500]
 
 # 2. Fonction lourde mise en cache pour isoler le calcul mathématique LDA (784 dimensions)
 @st.cache_resource
